@@ -26,6 +26,7 @@ public class WebSecurityConfig {
         return http.build();
     }
 
+
     @Bean
     public UserDetailsService userDetailsService() {
         var u1 = User.withUsername("Bill").password("12345").authorities("read").build();
