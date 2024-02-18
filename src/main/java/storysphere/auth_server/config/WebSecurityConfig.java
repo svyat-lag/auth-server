@@ -21,6 +21,8 @@ public class WebSecurityConfig {
                 )
                 .formLogin(Customizer.withDefaults());
 
+        http.cors(Customizer.withDefaults());
+
         return http.build();
     }
 
