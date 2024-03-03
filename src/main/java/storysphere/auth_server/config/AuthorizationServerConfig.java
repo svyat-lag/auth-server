@@ -69,6 +69,7 @@ public class AuthorizationServerConfig {
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
         config.addAllowedOrigin("https://id.storysphere.ru");
+        config.addAllowedOrigin("https://storysphere.ru");
         config.addAllowedOrigin("http://storysphere.ru");
         config.addAllowedOrigin("http://127.0.0.1:8000");
         config.setAllowCredentials(true);
