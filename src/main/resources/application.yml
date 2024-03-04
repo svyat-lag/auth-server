@@ -1,5 +1,9 @@
 server:
-  port: 9000
+  port: ${AUTHORIZATION_SERVER_SERVER_PORT:9000}
+
+token:
+  settings:
+    issuer: ${AUTHORIZATION_SERVER_TOKEN_SETTINGS_ISSUER:http://localhost:9000}
 
 logging:
   level:
